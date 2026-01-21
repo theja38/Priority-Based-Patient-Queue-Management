@@ -138,3 +138,15 @@ and priority-based queue handling.
 
 This project is licensed under the MIT License — free to use, modify, and distribute with attribution.
 
+------------------
+
+12. Login Details
+    For Staff
+      user name : staff1
+      password : staff123
+
+    For Doctor
+      user name : doctor1
+      password : doctor123
+
+  For patient can access directly
