@@ -1,152 +1,222 @@
-PRIORITY-BASED PATIENT QUEUE MANAGEMENT SYSTEM
-=============================================
+**🏥 Priority-Based Patient Queue Management System**
+**===========================================================**
 
-1. INTRODUCTION
+A real-time, priority-based hospital queue management system that reduces waiting time and improves patient flow using token-based registration and emergency prioritization.
 
-Hospitals often face long waiting times due to inefficient queue handling.
-This project provides a real-time, priority-based patient queue management
-system that improves hospital workflow and patient experience.
+**📌 Overview**
 
-The system uses token-based registration, emergency prioritization, and real-time updates to manage patient flow effectively.
+Hospitals often struggle with long waiting times due to inefficient queue handling. This system provides a smart, real-time queue management solution that prioritizes emergency patients and keeps staff, doctors, and patients updated instantly.
 
----------------
+The system uses React, Node.js, MongoDB, and Socket.IO to deliver a smooth and responsive experience.
 
-2. FEATURES
+**✨ Features**
 
-- Token-based patient registration
-- Priority handling for emergency cases
-- Role-based login (Doctor, Staff)
-- Real-time queue updates using Socket.IO
-- Current and next patient display
-- Live patient display screen
-- Average waiting time calculation
-- Secure authentication using JWT
-- Clean and responsive UI using Tailwind CSS
+    🎟️ Token-based patient registration
 
------------
+    🚨 Emergency priority handling
 
-3. USER ROLES
+    👨‍⚕️ Role-based login (Doctor / Staff)
 
-Staff:
-- Register patients
-- Assign emergency priority
+    ⚡ Real-time queue updates using Socket.IO
 
-Doctor:
-- View current and next patient
-- Complete consultations
-- View average waiting time
+    🔄 Current and next patient display
 
-Patient Display:
-- Shows current and next token
-- Displays waiting count and average waiting time
+    📺 Live patient display screen
 
--------------
+    ⏱️ Average waiting time calculation
 
-4. TECHNOLOGY STACK
+    🔐 Secure authentication with JWT
 
-Frontend:
-- React.js
-- Tailwind CSS
+    🎨 Clean and responsive UI (Tailwind CSS)
 
-Backend:
-- Node.js
-- Express.js
+**👥 User Roles**
 
-Database:
-- MongoDB
-
-Real-Time Communication:
-- Socket.IO
-
-Authentication:
-- JSON Web Token (JWT)
+  🧑‍💼 Staff
   
--------------------
+      Register patients
+      
+      Assign emergency priority
+      
+  <img width="840" height="497" alt="image" src="https://github.com/user-attachments/assets/bf415d1d-3b74-487f-a568-ebd4ae8765b8" />
 
-5. SYSTEM ARCHITECTURE
-
-- Frontend communicates with backend via REST APIs
-- Backend stores data in MongoDB
-- Socket.IO provides real-time updates to all clients
-- JWT ensures secure role-based access
-
-----------------------
-
-6. SOFTWARE REQUIREMENTS
-
-- Node.js (v18+ recommended)
-- MongoDB (local or cloud)
-- npm (Node Package Manager)
-- Web Browser (Chrome / Edge)
-- Visual Studio Code (recommended)
-
-------------------------
-
-7. HARDWARE REQUIREMENTS
-
-- Processor: Intel i3 or higher
-- RAM: Minimum 4 GB (8 GB recommended)
-- Storage: 10 GB free disk space
-- Internet connection
-
-------------------------
-
-8. HOW TO RUN THE PROJECT
-
-Backend:
-1. Open terminal
-2. Navigate to backend folder
-3. Run:
-   npm install
    
-   npm start
+  👨‍⚕️ Doctor
+  
+      View current and next patient
+      
+      Complete consultations
+      
+      View average waiting time
 
-Frontend:
-1. Open terminal
-2. Navigate to frontend folder
-3. Run:
-   npm install
-   
-   npm run dev
 
-Access URLs:
-- Frontend: http://localhost:5173
-- Patient Display: http://localhost:5173/display
-- Backend API: http://localhost:5000
+  <img width="838" height="601" alt="image" src="https://github.com/user-attachments/assets/1936785b-c246-4f46-9ad8-84df8804dcec" />
 
--------------------------
 
-9. FUTURE ENHANCEMENTS
+  🧑 Patient Display
 
-- Appointment scheduling
-- SMS / Email notifications
-- Multi-doctor support
-- Analytics dashboard
-- Hospital admin panel
+      Shows current and next token
 
-----------------------
+      Displays waiting count
 
-10. CONCLUSION
+       Shows average waiting time
+       
 
-This Priority-Based Patient Queue Management System improves efficiency,
-reduces waiting time, and enhances patient satisfaction by using real-time
-and priority-based queue handling.
+  <img width="1374" height="708" alt="image" src="https://github.com/user-attachments/assets/837d7576-6d03-477f-834a-4212cfff821c" />
 
-------------------
 
-11. 📜 License
+**🛠️ Technology Stack**
 
-This project is licensed under the MIT License — free to use, modify, and distribute with attribution.
+  Frontend
+  
+    React.js
+    Tailwaind CSS
 
-------------------
+  Backend
 
-12. Login Details
-    For Staff
-      user name : staff1
-      password : staff123
+      Node.js
+      Express.js
 
-    For Doctor
-      user name : doctor1
-      password : doctor123
+  Database
 
-  For patient can access directly
+      Mongo DB
+
+  Real-Time Communication
+
+      Socket.IO
+
+  Authentication
+
+      JSON Web Token (JWT)
+
+
+**🏗️ System Architecture**
+
+              Frontend (React)
+                   ↓ REST API
+          Backend (Node.js + Express)
+                    ↓
+              MongoDB Database
+                    ↑
+    Socket.IO (Real-time updates to all clients)
+
+
+  •  Frontend communicates with backend using REST APIs
+
+  •  Backend manages data in MongoDB
+
+  •  Socket.IO pushes real-time queue updates
+
+  •  JWT ensures secure role-based access
+
+
+**💻 Software Requirements**
+
+   •  Node.js (v18+ recommended)
+
+   •  MongoDB (local or cloud)
+
+   •  npm (Node Package Manager)
+
+   •  Web Browser (Chrome / Edge)
+
+  • Visual Studio Code (recommended)
+
+
+**🚀 Installation & Setup**
+
+  1️⃣ Clone the Repository
+  
+      git clone https://github.com/your-username/patient-queue-system.git
+      
+      cd patient-queue-system
+      
+  2️⃣ Backend Setup
+
+      cd backend
+      
+      npm install
+      
+      npm start
+
+   • Backend runs at
+
+      http://localhost:5000
+
+  3️⃣ Frontend Setup
+
+      cd frontend
+      
+      npm install
+      
+      npm run dev
+
+   • Frontend runs at
+
+      http://localhost:5173
+
+   • Patient display screen
+
+     http://localhost:5173/display
+
+
+**🔑 Demo Login Credentials**
+
+  🧑‍💼 Staff
+
+      Username: staff1
+      
+      Password: staff123
+
+  👨‍⚕️ Doctor
+
+      Username: doctor1
+      
+      Password: doctor123
+
+  🧑 Patient Display
+
+      👉 Patients can access the display directly without login.
+    
+
+**📂 Project Structure**
+
+      patient-queue-system/
+      │
+      ├── backend/
+      │   ├── routes/
+      │   ├── models/
+      │   ├── controllers/
+      │   └── server.js
+      │
+      ├── frontend/
+      │   ├── src/
+      │   ├── components/
+      │   └── pages/
+      │
+      └── README.md
+
+
+**🧪 Testing**
+
+  Basic API and real-time event testing were performed to ensure smooth queue updates and role-based functionality.
+
+**🤝 Contributing**
+
+  Contributions are welcome!
+
+  1. Fork the repository
+
+  2. Create a new branch
+
+  3. Commit your changes
+
+  4. Open a pull request
+
+
+**⭐ Acknowledgements**
+
+  Built to improve hospital workflow and patient experience through smart queue management.
+
+**📜 License**
+
+  This project is licensed under the MIT License — free to use, modify, and distribute with attribution.
